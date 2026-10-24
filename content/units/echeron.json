@@ -7,8 +7,6 @@
   "armor": 8,
   "hitSize": 9,
   "outlineColor": "4a4b53",
-  "envRequired": 0,
-  "envEnabled": 0,
   "targetAir": false,
   "research": {
     "parent": "merui",
