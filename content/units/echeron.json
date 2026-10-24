@@ -1,0 +1,38 @@
+{
+  "type": "mech",
+  "name": "Echeron",
+  "description": "Un vehículo mecha modificado con un cañón de alto calibre y blindaje reforzado.",
+  "speed": 0.65,
+  "health": 900,
+  "armor": 8,
+  "hitSize": 9,
+  "outlineColor": "4a4b53",
+  "envRequired": 0,
+  "envEnabled": 0,
+  "targetAir": false,
+  "research": {
+    "parent": "merui",
+    "requirements": [
+      { "item": "beryllium", "amount": 100 },
+      { "item": "graphite", "amount": 50 }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "stell-weapon",
+      "x": 0,
+      "y": 0,
+      "reload": 20,
+      "recoil": 2,
+      "shootSound": "tankShoot",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 38,
+        "speed": 4.5,
+        "lifetime": 45,
+        "width": 9,
+        "height": 13
+      }
+    }
+  ]
+}
