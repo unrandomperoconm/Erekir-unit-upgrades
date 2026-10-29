@@ -1,35 +1,56 @@
 {
-  "type": "mech",
-  "name": "Echeron",
-  "description": "Un vehículo mecha modificado con un cañón de alto calibre y blindaje reforzado.",
-  "speed": 0.65,
-  "health": 900,
+  "type": "tank",
+  "localizedName": "Echeron",
+  "description": "Un Stell modificado con un cañón de alto calibre y blindaje reforzado.",
+  "squareShape": true,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "envDisabled": 0,
+  "hitSize": 12,
+  "speed": 0.75,
+  "rotateSpeed": 3.5,
+  "health": 1100,
   "armor": 8,
-  "hitSize": 9,
-  "outlineColor": "4a4b53",
+  "itemCapacity": 0,
+  "floorMultiplier": 0.95,
   "targetAir": false,
+  "outlineColor": "4a4b53",
+  "treadFrames": 18,
+  "treadPullOffset": 3,
+  "treadRects": [
+    { "x": -20, "y": -25, "width": 14, "height": 51 }
+  ],
   "research": {
-    "parent": "merui",
-    "requirements": [
-      { "item": "beryllium", "amount": 100 },
-      { "item": "graphite", "amount": 50 }
-    ]
+    "parent": "stell",
+    "requirements": ["beryllium/100", "graphite/50"]
   },
   "weapons": [
     {
-      "name": "stell-weapon",
+      "name": "echeron-turret",
       "x": 0,
-      "y": 0,
-      "reload": 20,
-      "recoil": 2,
-      "shootSound": "tankShoot",
+      "y": -0.75,
+      "shootY": 4.5,
+      "mirror": false,
+      "rotate": true,
+      "rotateSpeed": 2.2,
+      "reload": 40,
+      "recoil": 1,
+      "layerOffset": 0.0001,
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 38,
-        "speed": 4.5,
-        "lifetime": 45,
-        "width": 9,
-        "height": 13
+        "sprite": "missile-large",
+        "damage": 45,
+        "speed": 4,
+        "lifetime": 40,
+        "width": 5,
+        "height": 7,
+        "hitSize": 4,
+        "backColor": "feb380",
+        "trailColor": "feb380",
+        "hitColor": "feb380",
+        "frontColor": "ffffff",
+        "trailWidth": 1.7,
+        "trailLength": 5
       }
     }
   ]
