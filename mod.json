@@ -1,0 +1,8 @@
+{
+  "name": "erekir-upgrades",
+  "displayName": "Erekir Unit Upgrades",
+  "author": "david",
+  "description": "Añade talleres de modificación.",
+  "version": "1.0",
+  "minGameVersion": "145"
+}
